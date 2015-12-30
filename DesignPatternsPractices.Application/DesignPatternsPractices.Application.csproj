@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{159DBBED-7519-4C5D-B05F-1556E0AC6611}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatternsPractices.Application</RootNamespace>
+    <AssemblyName>DesignPatternsPractices.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BehavioralPatterns.ChainOfResponsibility\BehavioralPatterns.ChainOfResponsibility.csproj">
+      <Project>{5cc40d3c-78c1-49e2-bf5c-666da28ab66c}</Project>
+      <Name>BehavioralPatterns.ChainOfResponsibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.ObserverPattern2\BehavioralPatterns.ObserverPattern2.csproj">
+      <Project>{f9953b02-1024-4bae-90c5-32435cb3f3be}</Project>
+      <Name>BehavioralPatterns.ObserverPattern2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.ObserverPattern3\BehavioralPatterns.ObserverPattern3.csproj">
+      <Project>{a1e5da07-c840-4cf8-a68a-dc30c456ae15}</Project>
+      <Name>BehavioralPatterns.ObserverPattern3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.ObserverPattern4\BehavioralPatterns.ObserverPattern4.csproj">
+      <Project>{681e561a-9226-4383-a150-d9da91491e72}</Project>
+      <Name>BehavioralPatterns.ObserverPattern4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.ObserverPattern\BehavioralPatterns.ObserverPattern.csproj">
+      <Project>{4c15a50a-daad-40f5-bc95-553a777fd333}</Project>
+      <Name>BehavioralPatterns.ObserverPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.StrategyPattern\BehavioralPatterns.StrategyPattern.csproj">
+      <Project>{18b10b43-daaa-418a-a84a-705c874d8ada}</Project>
+      <Name>BehavioralPatterns.StrategyPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.TemplateMethodPattern\BehavioralPatterns.TemplateMethodPattern.csproj">
+      <Project>{b1d3d682-e207-4009-b6e3-4c5f7c87bca4}</Project>
+      <Name>BehavioralPatterns.TemplateMethodPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.AbstractFactoryPattern2\CreationalPatterns.AbstractFactoryPattern2.csproj">
+      <Project>{9e3192f6-30fa-46df-b253-6c2c03ea5838}</Project>
+      <Name>CreationalPatterns.AbstractFactoryPattern2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.AbstractFactoryPattern\CreationalPatterns.AbstractFactoryPattern.csproj">
+      <Project>{ce9a29ff-20b8-40f0-a411-247fd8c6ec64}</Project>
+      <Name>CreationalPatterns.AbstractFactoryPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.BuilderPattern2\CreationalPatterns.BuilderPattern2.csproj">
+      <Project>{068279ae-fa9f-4a8b-a7c6-9bbba4253dfe}</Project>
+      <Name>CreationalPatterns.BuilderPattern2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.Builder\CreationalPatterns.BuilderPattern.csproj">
+      <Project>{1162da4b-4a8a-428d-983f-8cdebd6aa648}</Project>
+      <Name>CreationalPatterns.BuilderPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.AdapterPattern\StructuralPatterns.AdapterPattern.csproj">
+      <Project>{e2de0782-e7dd-45e4-ad1e-815121a41a8e}</Project>
+      <Name>StructuralPatterns.AdapterPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.DecoratorPattern2\StructuralPatterns.DecoratorPattern2.csproj">
+      <Project>{420ef5fe-a404-48a5-adcc-cda7cacd0184}</Project>
+      <Name>StructuralPatterns.DecoratorPattern2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.DecoratorPattern\StructuralPatterns.DecoratorPattern.csproj">
+      <Project>{b15614c5-d463-4ffa-beca-c04854103922}</Project>
+      <Name>StructuralPatterns.DecoratorPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.FacadePattern\StructuralPatterns.FacadePattern.csproj">
+      <Project>{63a6ed9e-7346-4bb2-be69-f88d0b9a7fbf}</Project>
+      <Name>StructuralPatterns.FacadePattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.ProxyPattern\StructuralPatterns.ProxyPattern.csproj">
+      <Project>{aa9cbf67-2fc8-446c-81b9-d0f15b72a644}</Project>
+      <Name>StructuralPatterns.ProxyPattern</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

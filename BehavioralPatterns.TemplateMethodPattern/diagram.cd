@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BehavioralPatterns.TemplateMethodPattern.HiringProcessor">
+    <Position X="2.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAABEAAAgAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>HiringProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BehavioralPatterns.TemplateMethodPattern.ITDepartmentHiringProcessor">
+    <Position X="4.25" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITDepartmentHiringProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BehavioralPatterns.TemplateMethodPattern.MarketingDepartmentHiringProcessor">
+    <Position X="1.25" Y="3" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MarketingDepartmentHiringProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Calibri" Size="10" />
+</ClassDiagram>

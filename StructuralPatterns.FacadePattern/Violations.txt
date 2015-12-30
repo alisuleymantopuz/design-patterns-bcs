@@ -1,0 +1,22 @@
+﻿static void Main(string[] args)
+{
+    const string zipCode = "SeattleZipCode";
+ 
+    GeoLocService geoLookupService = new GeoLocService();
+ 
+    string city = geoLookupService.GetCityForZipCode(zipCode);
+    string state = geoLookupService.GetStateForZipCode(zipCode);
+    Coordinates coords = geoLookupService.GetCoordinatesForZipCode(zipCode);
+ 
+    WeatherService weatherService = new WeatherService();
+    double farenheit = weatherService.GetTempFarenheit(coords.Latitude, coords.Longitude);
+ 
+    double celcius = farenheit.FarenheitToCelcius();
+ 
+    Console.WriteLine("The current temperature is {0}F/{1}C. in {2}, {3}",
+        farenheit.ToString("F1"),
+        celcius.ToString("F1"),
+        city,
+            state);
+        Console.ReadKey();
+}
